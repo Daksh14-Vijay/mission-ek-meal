@@ -136,22 +136,18 @@ margin-bottom:40px;
 }
 
 .gallery-grid{
-display:flex;
-flex-direction:column;
-gap:25px;
-align-items:center;
-}
-
-.gallery-grid img{
-max-width:420px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
 }
 
 .gallery-grid img{
 width:100%;
-height:auto;
-display:block;
+height:350px;
+object-fit:cover;
 border-radius:20px;
-border:2px solid rgba(212,175,55,.3);
 }
 
 .gallery-grid img:hover{
