@@ -13,3 +13,18 @@ if(event.target==modal){
 modal.style.display="none";
 }
 }
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+
+        const loader = document.getElementById("loader");
+
+        loader.style.opacity = "0";
+
+        setTimeout(function () {
+            loader.style.display = "none";
+        }, 1000);
+
+    }, 2500);
+
+});
